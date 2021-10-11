@@ -63,8 +63,13 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(/*Code Here*/){
-    /*Code Here*/
+  let score = Math.floor(Math.random() * 3);
+  if (score === 3) {
+    score = 2;
+  }
+  return score;
 }
+console.log(inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
